@@ -8,3 +8,14 @@ RATE = 44100
 CHUNK = 1024
 RECORD_SECONDS = 5  # You can adjust the recording duration as needed
 OUTPUT_FILENAME = "recorded_audio.wav"
+# Initialize PyAudio
+audio = pyaudio.PyAudio()
+
+# Open the audio stream (input)
+stream = audio.open(format=FORMAT, channels=CHANNELS,
+                    rate=RATE, input=True,
+                    frames_per_buffer=CHUNK)
+
+print("Recording...")
+
+frames = []
