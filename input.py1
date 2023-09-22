@@ -1,1 +1,10 @@
+import pyaudio
+import wave
 
+# Set the parameters for audio recording
+FORMAT = pyaudio.paInt16
+CHANNELS = 1
+RATE = 44100
+CHUNK = 1024
+RECORD_SECONDS = 5  # You can adjust the recording duration as needed
+OUTPUT_FILENAME = "recorded_audio.wav"
