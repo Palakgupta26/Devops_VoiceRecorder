@@ -30,3 +30,11 @@ print("Recording finished.")
 stream.stop_stream()
 stream.close()
 audio.terminate()
+# Save the recorded audio to a WAV file
+with wave.open(OUTPUT_FILENAME, 'wb') as wf:
+    wf.setnchannels(CHANNELS)
+    wf.setsampwidth(audio.get_sample_size(FORMAT))
+    wf.setframerate(RATE)
+    wf.writeframes(b''.join(frames))
+
+print(f"Audio saved as {OUTPUT_FILENAME}")
