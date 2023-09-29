@@ -25,7 +25,6 @@ q = queue.Queue()
 recording = False
 paused = False
 file_exists = False
-
 # Function to fit data into the queue
 def callback(indata, frames, time, status):
     if not paused:
@@ -55,4 +54,5 @@ def threading_rec(x):
     elif x == 5:
         paused = False
         messagebox.showinfo(message="Recording resumed")
+
 
