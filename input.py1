@@ -69,3 +69,10 @@ def record_audio():
 # Label to display the app title
 title_lbl = Label(voice_rec, text="Voice Recorder", font=("Arial", 26, "bold"),bg="#FFFFFF", fg="Black")
 title_lbl.grid(row=0, column=0, columnspan=5, pady=10)
+
+# Buttons with improved style
+record_btn = Button(voice_rec, text="Record", command=lambda m=1: threading_rec(m), bg="#FFFFFF", fg="Black", font=("Times", 20))
+stop_btn = Button(voice_rec, text="Stop", command=lambda m=2: threading_rec(m), bg="#FFFFFF", fg="Black", font=("Times", 20))
+play_btn = Button(voice_rec, text="Play", command=lambda m=3: threading_rec(m), bg="#FFFFFF", fg="Black", font=("Times", 20))
+pause_btn = Button(voice_rec, text="Pause", command=lambda m=4: threading_rec(m), bg="#FFFFFF", fg="Black", font=("Times", 20))
+resume_btn = Button(voice_rec, text="Resume", command=lambda m=5: threading_rec(m), bg="#FFFFFF", fg="Black", font=("Times", 20))
