@@ -82,3 +82,6 @@ stop_btn.grid(row=1, column=1, padx=85, pady=85)
 play_btn.grid(row=1, column=2, padx=125, pady=90)
 pause_btn.grid(row=1, column=3, padx=85, pady=85)
 resume_btn.grid(row=1, column=4, padx=85, pady=85)
+
+# Start the Tkinter main loop
+voice_rec.mainloop()
