@@ -76,3 +76,9 @@ stop_btn = Button(voice_rec, text="Stop", command=lambda m=2: threading_rec(m), 
 play_btn = Button(voice_rec, text="Play", command=lambda m=3: threading_rec(m), bg="#FFFFFF", fg="Black", font=("Times", 20))
 pause_btn = Button(voice_rec, text="Pause", command=lambda m=4: threading_rec(m), bg="#FFFFFF", fg="Black", font=("Times", 20))
 resume_btn = Button(voice_rec, text="Resume", command=lambda m=5: threading_rec(m), bg="#FFFFFF", fg="Black", font=("Times", 20))
+
+record_btn.grid(row=1, column=0, padx=85, pady=85)
+stop_btn.grid(row=1, column=1, padx=85, pady=85)
+play_btn.grid(row=1, column=2, padx=125, pady=90)
+pause_btn.grid(row=1, column=3, padx=85, pady=85)
+resume_btn.grid(row=1, column=4, padx=85, pady=85)
