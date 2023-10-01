@@ -32,7 +32,7 @@ def callback(indata, frames, time, status):
 
 # Functions to play, stop, record, pause, and resume audio
 def threading_rec(x):
-    
+        global recording, paused
     if x == 1:
         t1 = threading.Thread(target=record_audio)
         t1.start()
