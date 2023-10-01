@@ -37,8 +37,6 @@ def threading_rec(x):
         t1 = threading.Thread(target=record_audio)
         t1.start()
     elif x == 2:
-        recording = False
-        paused = False
         messagebox.showinfo(message="Recording finished")
     elif x == 3:
         if file_exists:
