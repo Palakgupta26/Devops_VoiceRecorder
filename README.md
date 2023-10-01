@@ -1,4 +1,5 @@
 # Devops_VoiceRecorder
+
 Welcome to the Voice Recorder App! This app allows users to record audio on their devices effortlessly.Our app provides a user-friendly experience.
 Simple Interface: Intuitive user interface for easy navigation.
 Recording: Record audio with a single tap.
