@@ -13,6 +13,7 @@ voice_rec.title("Voice Recorder")
 
 # Load the background image
 bg_image = PhotoImage(file="background.gif")  # Replace with the path to your background image
+
 # Create a Label widget to display the background image
 bg_label = Label(voice_rec, image=bg_image)
 bg_label.place(relwidth=1, relheight=1)
@@ -25,6 +26,7 @@ q = queue.Queue()
 recording = False
 paused = False
 file_exists = False
+
 # Function to fit data into the queue
 def callback(indata, frames, time, status):
     if not paused:
@@ -54,6 +56,7 @@ def threading_rec(x):
     elif x == 5:
         paused = False
         messagebox.showinfo(message="Recording resumed")
+        
 # Recording function
 def record_audio():
     global recording
