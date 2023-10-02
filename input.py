@@ -57,3 +57,45 @@ def threading_rec(x):
     elif x == 5:
         paused = False
         messagebox.showinfo(message="Recording resumed")
+
+# Recording function
+def record_audio():
+    global recording
+    recording = True
+    global file_exists
+    messagebox.showinfo(message="Recording Audio. Speak into the microphone.")
+    with sf.SoundFile("trial.wav", mode='w', samplerate=44100, channels=2) as file:
+        with sd.InputStream(samplerate=44100, channels=2, callback=callback):
+            while recording:
+                file_exists = True
+                file.write(q.get())
+
+# Label to display the app title
+title_lbl = Label(voice_rec, text="Voice Recorder", font=("Arial", 26, "bold"),bg="#FFFFFF", fg="Black")
+title_lbl.grid(row=0, column=0, columnspan=5, pady=10)
+
+# Function to update the timer label
+def update_timer():
+    global recording, paused
+    seconds = 0
+    while recording:
+        if not paused:
+            seconds += 1
+            timer_label.config(text=f"Time: {seconds} seconds")
+        voice_rec.update()
+        time.sleep(1)
+
+# Recording function
+def record_audio():
+    global recording
+    recording = True
+    global file_exists
+    file_exists = False
+    timer_thread = threading.Thread(target=update_timer)
+    timer_thread.start()
+    messagebox.showinfo(message="Recording Audio. Speak into the microphone.")
+    with sf.SoundFile("trial.wav", mode='w', samplerate=44100, channels=2) as file:
+        with sd.InputStream(samplerate=44100, channels=2, callback=callback):
+            while recording:
+                file_exists = True
+                file.write(q.get())
