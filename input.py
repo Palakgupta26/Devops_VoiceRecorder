@@ -99,3 +99,22 @@ def record_audio():
             while recording:
                 file_exists = True
                 file.write(q.get())
+# Create a label to display the timer
+timer_label = Label(voice_rec, text="Time: 0 seconds", font=("Times", 20), bg="#FFFFFF", fg="Black")
+timer_label.grid(row=2, column=0, columnspan=5, pady=10)
+
+# Buttons with improved style
+record_btn = Button(voice_rec, text="Record", command=lambda m=1: threading_rec(m), bg="#FFFFFF", fg="Black", font=("Times", 20))
+stop_btn = Button(voice_rec, text="Stop", command=lambda m=2: threading_rec(m), bg="#FFFFFF", fg="Black", font=("Times", 20))
+play_btn = Button(voice_rec, text="Play", command=lambda m=3: threading_rec(m), bg="#FFFFFF", fg="Black", font=("Times", 20))
+pause_btn = Button(voice_rec, text="Pause", command=lambda m=4: threading_rec(m), bg="#FFFFFF", fg="Black", font=("Times", 20))
+resume_btn = Button(voice_rec, text="Resume", command=lambda m=5: threading_rec(m), bg="#FFFFFF", fg="Black", font=("Times", 20))
+
+record_btn.grid(row=1, column=0, padx=85, pady=85)
+stop_btn.grid(row=1, column=1, padx=85, pady=85)
+play_btn.grid(row=1, column=2, padx=125, pady=90)
+pause_btn.grid(row=1, column=3, padx=85, pady=85)
+resume_btn.grid(row=1, column=4, padx=85, pady=85)
+
+# Start the Tkinter main loop
+voice_rec.mainloop()
