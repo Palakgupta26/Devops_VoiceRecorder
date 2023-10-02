@@ -31,3 +31,10 @@ Fork the repository.
 Create a branch for your feature or bug fix.
 Make your changes and commit them.
 Create a pull request with a clear description of your changes.
+
+
+
+FIRST OUTCOME OF OUR PROJECT
+<img width="713" alt="Screenshot 2023-10-02 at 10 59 35 PM" src="https://github.com/Palakgupta26/Devops_VoiceRecorder/assets/113382989/044fc1f6-740c-4ebd-a20e-75bca7a13fd1">
+
+
