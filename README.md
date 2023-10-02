@@ -37,4 +37,11 @@ Create a pull request with a clear description of your changes.
 FIRST OUTCOME OF OUR PROJECT
 <img width="713" alt="Screenshot 2023-10-02 at 10 59 35 PM" src="https://github.com/Palakgupta26/Devops_VoiceRecorder/assets/113382989/044fc1f6-740c-4ebd-a20e-75bca7a13fd1">
 
+SECOND OUTCOME OF OUR PROJECT WITH SOME UPDATION
+![c547c17f-901a-4325-86fd-93d9a2eba789](https://github.com/Palakgupta26/Devops_VoiceRecorder/assets/113382989/2f46a760-c0db-4583-8a9f-3ae00a2063f8)
+
+
+![6f85e261-f107-4926-89ba-ac961f56914b](https://github.com/Palakgupta26/Devops_VoiceRecorder/assets/113382989/86a1b590-e99b-4045-b55d-2a318c8842d2)
+
+
 
