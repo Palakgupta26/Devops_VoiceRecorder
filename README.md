@@ -40,8 +40,14 @@ FIRST OUTCOME OF OUR PROJECT
 SECOND OUTCOME OF OUR PROJECT WITH SOME UPDATION
 ![c547c17f-901a-4325-86fd-93d9a2eba789](https://github.com/Palakgupta26/Devops_VoiceRecorder/assets/113382989/2f46a760-c0db-4583-8a9f-3ae00a2063f8)
 
-
+Third OUTCOME OF OUR PROJECT WITH SOME UPDATION
 ![6f85e261-f107-4926-89ba-ac961f56914b](https://github.com/Palakgupta26/Devops_VoiceRecorder/assets/113382989/86a1b590-e99b-4045-b55d-2a318c8842d2)
 
+Fourth iteration of our project
+![Alt text](<WhatsApp Image 2023-10-02 at 22.53.16_2ce0d898.jpg>)
 
+Fifth and final iteration after taking suggestion from one of the feedback
+![Alt text](<WhatsApp Image 2023-10-02 at 22.52.40_402d3b1b.jpg>)
 
+Feedback:
+![Alt text](image-1.png)
