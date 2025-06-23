@@ -13,7 +13,7 @@ voice_rec.geometry("2100x750")
 voice_rec.title("Voice Recorder")
 
 # Load the background image
-bg_image = PhotoImage(file="background.gif")  # Replace with the path to your background image
+bg_image = PhotoImage(file="https://i.pinimg.com/originals/8e/46/15/8e46150f790fbefe438d9c2767c32ad1.gif")  # Replace with the path to your background image
 
 # Create a Label widget to display the background image
 bg_label = Label(voice_rec, image=bg_image)
@@ -64,8 +64,8 @@ def record_audio():
     recording = True
     global file_exists
     messagebox.showinfo(message="Recording Audio. Speak into the microphone.")
-    with sf.SoundFile("trial.wav", mode='w', samplerate=44100, channels=2) as file:
-        with sd.InputStream(samplerate=44100, channels=2, callback=callback):
+    with sf.SoundFile("trial.wav", mode='w', samplerate=44100, channels=1) as file:
+        with sd.InputStream(samplerate=44100, channels=1, callback=callback):
             while recording:
                 file_exists = True
                 file.write(q.get())
